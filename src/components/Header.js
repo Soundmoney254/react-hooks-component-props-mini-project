@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header({name = "My Blog"}) {
+function Header({name}) {
 
   return (
   <header>
