@@ -4,21 +4,24 @@
   "private": true,
   "jest": {
     "transform": {
-      "^.+\\.js$": "babel-jest",
-      "^.+\\.svg$": "jest-svg-transformer"
-    }
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "preset": "@babel/preset-env"
   },
   "dependencies": {
-    "jest-svg-transformer": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
     "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "babel-jest": "^29.5.0",
+    "jest-svg-transformer": "^1.0.0",
     "mocha": "^8.2.1"
   },
   "scripts": {
